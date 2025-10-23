@@ -12,6 +12,8 @@ class Client {
         try {
             MyClient = new Socket("localhost", 8888);
 
+            int test = 1;
+
             input = new BufferedInputStream(MyClient.getInputStream());
             output = new BufferedOutputStream(MyClient.getOutputStream());
             BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
